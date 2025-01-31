@@ -40,6 +40,7 @@ Attempt to Access the Shared Folders
 -  ✅ read-access: Can view files but not edit.
 -  ✅ write-access: Can view and modify files.
 -  ❌ no-access: Should be denied access.
+
 ![image](https://github.com/user-attachments/assets/72d84dd2-313b-4bba-878a-3b375a87d181)
 ![image](https://github.com/user-attachments/assets/79ed87db-116e-4124-9814-1cbac79faeff)
 ![image](https://github.com/user-attachments/assets/b37a9ec9-95de-48e6-9847-49bc0fe72dc3)
@@ -62,13 +63,15 @@ Go to Accounts Folders in C:\ Drive
     -  Click and check Permissions level, Select Read & Write
      -  then share and done:
 -  Click OK and Apply.
--  https://i.imgur.com/O3bDSIo.png
+
+![](https://i.imgur.com/O3bDSIo.png)
 
 ###  Step 7: Test Security Group Permissions
 Try to Access "accounting" as a Normal User
 -  Log into Client-1 as (normal user). mydomain.com\law.fic
 -  Open File Explorer → Type \\DC-1 in the address bar.
 -  Try to open the accounting folder → It should be denied.
+
 ![image](https://github.com/user-attachments/assets/c36b3585-c3cc-4083-ba1e-9481203b038e)
 
 ### Add a User to the Accountants Group
@@ -77,6 +80,7 @@ Grant Access to "accounting" Folder
 -  doble-click _GROUP → right click account security → Properties
 -  Go to the Member Of tab → Click Add.
 -  Type law.fik → Check name, Click OK and Apply.
+
 ![](https://i.imgur.com/C9N4lyi.png)
 
 ### Verify Access AS An Accountant
@@ -84,14 +88,21 @@ Reattempt Access to "accounting"
 -  Log out and log back into Client-1 as <law.fik>.
 -  Open \\DC-1 and try to access the accounting folder.
 It should now open successfully!
+
 ![image](https://github.com/user-attachments/assets/c0dc96bd-ac83-4923-bff2-e6d10891a204)
 
 ### Conclusion
-In this lab, we successfully: ✅ Created shared folders on DC-1
-✅ Configured file permissions
-✅ Tested access from Client-1
-✅ Created a security group in Active Directory
-✅ Assigned users to the group and verified permissions
+In this lab, we successfully: 
+
+-  Created shared folders on DC-1
+
+-   Configured file permissions
+
+-  Tested access from Client-1
+
+-  Created a security group in Active Directory
+
+-  Assigned users to the group and verified permissions
 
 
 
